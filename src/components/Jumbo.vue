@@ -2,10 +2,13 @@
   <!-- start jumbo -->
   <div class="jumbo mx-3 mt-5">
     <div class="container">
-      <div class="row">
+      <div class="row mb-5">
         <!-- left -->
 
         <div class="col-6 d-flex justify-content-end">
+          <div class="col-2">
+            <!-- inserire icona -->
+          </div>
           <div class="col-10">
             <!-- title -->
             <h1 class="jumbo-title fw-light text-right mb-4">
@@ -67,8 +70,16 @@
               class="w-50 me-4"
             />
           </div>
+          <div class="col-1">
+            <!-- inserire icona -->
+          </div>
         </div>
         <!-- end col -->
+        <div class="col-12 d-flex justify-content-center mt-5">
+          <div class="dot mx-2"></div>
+          <div class="dot mx-2"></div>
+          <div class="dot mx-2"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -93,6 +104,13 @@ export default {
     border: 2px solid #f5d8ca;
     border-radius: 0;
     padding: 7px 18px;
+  }
+  .dot {
+    border-radius: 50%;
+    padding: 3px;
+    width: 10px;
+    height: 10px;
+    background-color: #f3d0c7;
   }
 }
 </style>

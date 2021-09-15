@@ -22,4 +22,12 @@ export default {
 
 <style lang="scss">
 @import "scss/style.scss";
+// utilities
+.clickable {
+  cursor: pointer;
+}
+
+#app {
+  overflow-x: hidden;
+}
 </style>
