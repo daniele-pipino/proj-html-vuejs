@@ -74,8 +74,8 @@ export default {
   .bg-rounded {
     border-radius: 50%;
     background-color: $antique-color;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     position: relative;
     i {
       position: absolute;

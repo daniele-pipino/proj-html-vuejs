@@ -93,19 +93,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/scss/_style.scss";
 .jumbo {
   .jumbo-title {
     font-size: 75px;
   }
   .jumbo-subtitle {
-    color: #878787;
+    color: $subtitle-grey;
   }
   .jumbo-btn {
-    border: 2px solid #f5d8ca;
+    border: 2px solid $rose;
     border-radius: 0;
     padding: 7px 18px;
     &:hover {
-      background-color: #f5d8ca;
+      background-color: $rose;
     }
   }
   .dot {
@@ -113,7 +114,7 @@ export default {
     padding: 3px;
     width: 10px;
     height: 10px;
-    background-color: #f3d0c7;
+    background-color: $rose;
   }
 }
 </style>

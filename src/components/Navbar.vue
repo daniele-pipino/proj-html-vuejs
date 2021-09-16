@@ -1,9 +1,11 @@
 <template>
   <div>
-    <header class="d-flex justify-content-between mx-4">
+    <header class="d-flex justify-content-between mx-4" id="Navbar">
       <!-- logo -->
       <div class="logo pt-3">
-        <img src="@/assets/img/logo-sidearea-1.png" alt="" class="img-fluid" />
+        <a href="#Navbar"
+          ><img src="@/assets/img/logo-sidearea-1.png" alt="" class="img-fluid"
+        /></a>
       </div>
       <!-- navbar -->
       <div class="nav-bar d-flex">
@@ -72,7 +74,6 @@ header {
     }
     .dot-menu {
       width: 20px;
-      color: red;
     }
   }
 }
