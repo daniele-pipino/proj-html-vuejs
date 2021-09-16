@@ -1,22 +1,31 @@
 <template>
-  <div class="col-4 mt-5">
+  <div class="col-3 mt-5">
     <!-- image -->
     <figure class="position-relative">
-      <img src="@/assets/img/blog-img-1.jpg" alt="" class="img-fluid" />
+      <img :src="getPoster(this.post.poster_path)" alt="" class="img-fluid" />
       <div class="article-date">
-        <div class="day text-center"></div>
-        <div class="month-year"></div>
+        <div class="day text-center">{{ post.day }}</div>
+        <div class="month-year text-center">{{ post.month }}</div>
       </div>
     </figure>
     <!-- end image -->
-    <h4>Ciao sono bello ciao ciao ciao ciao</h4>
-    <p class="fw-italic">By Emilie fields</p>
+    <h4>{{ post.title }}</h4>
+    <p class="fw-italic">{{ post.author }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "Blogcard",
+  props: ["post"],
+  data() {
+    return {};
+  },
+  methods: {
+    getPoster(poster) {
+      return require(`@/assets/img/${poster}.jpg`);
+    },
+  },
 };
 </script>
 
@@ -30,6 +39,7 @@ export default {
     position: absolute;
     top: -15px;
     left: 15px;
+    padding-top: 7px;
   }
   .month-year {
     width: 50px;
@@ -38,6 +48,8 @@ export default {
     position: absolute;
     top: 25px;
     left: 15px;
+    font-size: 12px;
+    padding-top: 7px;
   }
 }
 </style>

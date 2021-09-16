@@ -22,7 +22,7 @@ header[data-v-5dd6cf62]{height:70px}header .nav-bar ul li[data-v-5dd6cf62]{list-
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */.article-date .day{width:50px;height:40px;background-color:#badac9;position:absolute;top:-15px;left:15px}.article-date .month-year{width:50px;min-height:40px;background-color:#f5d8ca;position:absolute;top:25px;left:15px}
+ */.article-date .day{height:40px;background-color:#badac9;top:-15px}.article-date .day,.article-date .month-year{width:50px;position:absolute;left:15px;padding-top:7px}.article-date .month-year{min-height:40px;background-color:#f5d8ca;top:25px;font-size:12px}
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
