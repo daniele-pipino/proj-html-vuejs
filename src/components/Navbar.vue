@@ -56,6 +56,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/scss/_variables.scss";
 header {
   height: 70px;
   .nav-bar {
@@ -65,7 +66,7 @@ header {
     a {
       text-transform: uppercase;
       text-decoration: none;
-      color: black;
+      color: $link-color;
       font-size: 13px;
       line-height: 70px;
     }

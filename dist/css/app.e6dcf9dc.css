@@ -1,4 +1,11 @@
-header[data-v-8421a6d2]{height:70px}header .nav-bar ul li[data-v-8421a6d2]{list-style-type:none}header .nav-bar a[data-v-8421a6d2]{text-transform:uppercase;text-decoration:none;color:#000;font-size:13px;line-height:70px}header .nav-bar .dot-menu[data-v-8421a6d2]{width:20px;color:red}.jumbo .jumbo-title[data-v-4fd1718c]{font-size:75px}.jumbo .jumbo-subtitle[data-v-4fd1718c]{color:#878787}.jumbo .jumbo-btn[data-v-4fd1718c]{border:2px solid #f5d8ca;border-radius:0;padding:7px 18px}.jumbo .dot[data-v-4fd1718c]{border-radius:50%;padding:3px;width:10px;height:10px;background-color:#f3d0c7}.book-column[data-v-1d308a79]{background-image:url(../img/hover-book.c434d761.png);background-size:cover}.book-column .img-1[data-v-1d308a79]:hover{opacity:0}
+header[data-v-4ea20ad4]{height:70px}header .nav-bar ul li[data-v-4ea20ad4]{list-style-type:none}header .nav-bar a[data-v-4ea20ad4]{text-transform:uppercase;text-decoration:none;color:#000;font-size:13px;line-height:70px}header .nav-bar .dot-menu[data-v-4ea20ad4]{width:20px;color:red}.jumbo .jumbo-title[data-v-1cb0364f]{font-size:75px}.jumbo .jumbo-subtitle[data-v-1cb0364f]{color:#878787}.jumbo .jumbo-btn[data-v-1cb0364f]{border:2px solid #f5d8ca;border-radius:0;padding:7px 18px}.jumbo .jumbo-btn[data-v-1cb0364f]:hover{background-color:#f5d8ca}.jumbo .dot[data-v-1cb0364f]{border-radius:50%;padding:3px;width:10px;height:10px;background-color:#f3d0c7}.book-column[data-v-1d308a79]{background-image:url(../img/hover-book.c434d761.png);background-size:cover}.book-column .img-1[data-v-1d308a79]:hover{opacity:0}
+/*!
+ * Bootstrap v5.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */#work-section .process-container{background-image:url(../img/svg-3.d9f4e135.svg);background-repeat:no-repeat;background-position:top}#work-section .bg-rounded{border-radius:50%;background-color:#faf7f1;width:100px;height:100px;position:relative}#work-section .bg-rounded i{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}#work-section .bg-rounded .icon-green{color:#badac9}#work-section .bg-rounded .icon-yellow{color:#f8d12d}#work-section .bg-rounded .icon-violet{color:#80465f}#work-section .bg-rounded .icon-red{color:#f0817b}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

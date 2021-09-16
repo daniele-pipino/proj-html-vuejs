@@ -32,7 +32,7 @@
           <!-- left -->
           <div class="d-flex flex-column h-100 justify-content-between">
             <img
-              src="@/assets/img/short-slider-rev-1-img-6.png"
+              src="@/assets/img/short-slider-rev-1-img-2.png"
               alt=""
               class="w-50 ms-5"
             />
@@ -76,9 +76,9 @@
         </div>
         <!-- end col -->
         <div class="col-12 d-flex justify-content-center mt-5">
-          <div class="dot mx-2"></div>
-          <div class="dot mx-2"></div>
-          <div class="dot mx-2"></div>
+          <div class="dot mx-2 clickable"></div>
+          <div class="dot mx-2 clickable"></div>
+          <div class="dot mx-2 clickable"></div>
         </div>
       </div>
     </div>
@@ -104,6 +104,9 @@ export default {
     border: 2px solid #f5d8ca;
     border-radius: 0;
     padding: 7px 18px;
+    &:hover {
+      background-color: #f5d8ca;
+    }
   }
   .dot {
     border-radius: 50%;
