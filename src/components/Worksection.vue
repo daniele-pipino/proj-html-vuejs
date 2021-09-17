@@ -72,6 +72,7 @@ export default {
     background-image: url("../assets/svg/svg-3.svg");
     background-repeat: no-repeat;
     background-position: top;
+    padding: 0 30px;
     .explanation {
       color: $subtitle-grey;
     }

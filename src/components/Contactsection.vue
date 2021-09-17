@@ -10,16 +10,19 @@
           h-100
         "
       >
+        <!-- title -->
         <h1 class="my-3 fw-light">
           Want to work with us? Send us
           <span class="lobster fs-1">a message</span>
         </h1>
+        <!-- subtitle -->
         <p class="my-3">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
           cupiditate aliquid quis! Unde temporibus velit magni eius
           necessitatibus ad labore, tenetur asperiores placeat libero illo, sint
           ipsa pariatur rem quos?
         </p>
+        <!-- button -->
         <a href="#" class="btn contact-btn px-5 my-3">CONTACT</a>
       </div>
     </div>

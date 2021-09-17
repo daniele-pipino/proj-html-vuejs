@@ -36,6 +36,7 @@
       <!-- 6 -->
       <div class="col-4 p-0 position-relative">
         <img src="@/assets/img/port-img-6.jpg" alt="" class="img-fluid" />
+        <!-- arrow -->
         <div
           class="
             arrow-up
@@ -49,6 +50,7 @@
             ><img src="@/assets/svg/arrow-up.svg" alt="" class=""
           /></a>
         </div>
+        <!-- end arrow  -->
       </div>
     </div>
   </section>

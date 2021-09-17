@@ -10,9 +10,14 @@
       <!-- navbar -->
       <div class="nav-bar d-flex">
         <ul class="d-flex align-items-center justify-content-center pt-2">
-          <li v-for="(item, index) in navbar" :key="index" class="mx-3 fw-bold">
+          <li
+            v-for="(item, index) in navbar"
+            :key="index"
+            class="nav-items mx-3 fw-light font-monospace"
+          >
             <a href="#">{{ item.element }}</a>
           </li>
+          <!-- dot menu -->
           <li class="mx-3 fw-bold">
             <a href="#"
               ><img
@@ -64,13 +69,17 @@ header {
   .nav-bar {
     ul li {
       list-style-type: none;
+      padding: 0;
+      &:hover {
+        border-bottom: 3px solid #f3d0c7;
+      }
     }
     a {
       text-transform: uppercase;
       text-decoration: none;
       color: $link-color;
       font-size: 13px;
-      line-height: 70px;
+      padding: 0;
     }
     .dot-menu {
       width: 20px;

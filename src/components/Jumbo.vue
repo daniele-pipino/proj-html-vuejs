@@ -16,6 +16,7 @@
                 clickable
               "
             >
+              <!-- arrow -->
               <i
                 @click="decreaseIndex"
                 class="fas fa-chevron-left clickable fa-1x"
@@ -57,7 +58,7 @@
             <img
               src="@/assets/img/short-slider-rev-1-img-8.png"
               alt=""
-              class="w-50 ms-4"
+              class="ms-4"
             />
           </div>
           <!-- center -->
@@ -99,6 +100,7 @@
                 clickable
               "
             >
+              <!-- arrow -->
               <i @click="increaseIndex" class="fas fa-chevron-right"></i>
             </div>
           </div>

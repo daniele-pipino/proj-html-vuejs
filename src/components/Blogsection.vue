@@ -2,6 +2,7 @@
   <section id="blog-section" class="my-5">
     <div class="container">
       <div class="row justify-content-center">
+        <!-- components -->
         <Blogcard v-for="(post, index) in blogpost" :key="index" :post="post" />
       </div>
     </div>
@@ -21,9 +22,9 @@ export default {
         {
           id: 1,
           author: "By Emilie Fields",
-          title: "This way Loves, a detailde guide thrue new design",
+          title: "This way Loves, a detailed guide through new design",
           day: "07",
-          month: "May' 19",
+          month: "May'19",
           poster_path: "blog-img-1",
         },
         {
@@ -31,7 +32,7 @@ export default {
           author: "By Emilie Fields",
           title: "I try to give people a different way of looking art",
           day: "07",
-          month: "May' 19",
+          month: "May'19",
           poster_path: "blog-img-2",
         },
         {
@@ -39,7 +40,7 @@ export default {
           author: "By Emilie Fields",
           title: "Introduce Richrad Laperrière of those amazing features",
           day: "07",
-          month: "May' 19",
+          month: "May'19",
           poster_path: "blog-img-3",
         },
       ],

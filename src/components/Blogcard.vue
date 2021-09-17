@@ -1,9 +1,10 @@
 <template>
-  <div class="col-3 mt-5">
+  <div class="col-3 mt-5 clickable">
     <!-- image -->
     <figure class="position-relative">
       <img :src="getPoster(this.post.poster_path)" alt="" class="img-fluid" />
       <div class="article-date">
+        <!-- date -->
         <div
           class="
             day
@@ -18,11 +19,23 @@
             {{ post.day }}
           </div>
         </div>
-        <div class="month-year text-center fw-bolder">{{ post.month }}</div>
+        <!-- month -->
+        <div
+          class="
+            month-year
+            text-center
+            fw-bold
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          {{ post.month }}
+        </div>
       </div>
     </figure>
     <!-- end image -->
-    <h4 class="fw-light mb-3">{{ post.title }}</h4>
+    <h5 class="fw-light mb-3">{{ post.title }}</h5>
     <p class="fst-italic dancing-script">{{ post.author }}</p>
   </div>
 </template>
@@ -44,6 +57,7 @@ export default {
 
 <style lang="scss">
 @import "@/scss/_style.scss";
+
 .article-date {
   .day {
     width: 50px;
@@ -56,7 +70,7 @@ export default {
   }
   .month-year {
     width: 50px;
-    min-height: 40px;
+    min-height: 30px;
     background-color: $rose;
     position: absolute;
     top: 25px;

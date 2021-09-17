@@ -26,16 +26,16 @@
           <p>Stay in touch with us</p>
           <div class="social d-flex justify-content-center">
             <p>
-              <a href=""> <i class="fab fa-twitter mx-3"></i></a>
+              <a href="#"> <i class="fab fa-twitter mx-3"></i></a>
             </p>
             <p>
-              <a href=""><i class="fab fa-pinterest-p mx-3"></i> </a>
+              <a href="#"><i class="fab fa-pinterest-p mx-3"></i> </a>
             </p>
             <p>
-              <a href=""> <i class="fab fa-facebook-f mx-3"></i></a>
+              <a href="#"> <i class="fab fa-facebook-f mx-3"></i></a>
             </p>
             <p>
-              <a href=""><i class="fab fa-linkedin-in mx-3"></i> </a>
+              <a href="#"><i class="fab fa-linkedin-in mx-3"></i> </a>
             </p>
           </div>
         </div>
