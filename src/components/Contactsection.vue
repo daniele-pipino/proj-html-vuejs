@@ -39,7 +39,7 @@ export default {
     color: $subtitle-grey;
   }
   .contact-btn {
-    background-color: $green-apple;
+    background-color: $main-color;
     border-radius: 0;
     &:hover {
       background-color: $rose;

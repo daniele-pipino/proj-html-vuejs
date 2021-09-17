@@ -35,7 +35,7 @@ export default {
   .day {
     width: 50px;
     height: 40px;
-    background-color: $green-apple;
+    background-color: $main-color;
     position: absolute;
     top: -15px;
     left: 15px;

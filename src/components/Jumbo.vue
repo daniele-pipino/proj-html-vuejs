@@ -6,8 +6,21 @@
         <!-- left -->
 
         <div class="col-6 d-flex justify-content-end">
-          <div class="col-2">
-            <!-- inserire icona -->
+          <div class="col-2 d-flex align-items-center">
+            <div
+              class="
+                chevron-bg
+                d-flex
+                justify-content-center
+                align-items-center
+                clickable
+              "
+            >
+              <i
+                @click="decreaseIndex"
+                class="fas fa-chevron-left clickable fa-1x"
+              ></i>
+            </div>
           </div>
           <div class="col-10">
             <!-- title -->
@@ -49,8 +62,14 @@
           </div>
           <!-- center -->
           <div class="d-flex">
-            <img src="@/assets/img/jumbogirl.png" alt="" class="w-50" />
-            <img src="@/assets/img/jumbo-boy.png" alt="" class="w-50 ms-1" />
+            <img
+              v-for="(image, index) in images"
+              :key="index"
+              :src="getImages(image)"
+              alt=""
+              class="img-fluid"
+              :class="currentIndex === index ? '' : 'd-none'"
+            />
           </div>
           <!-- right -->
           <div class="d-flex flex-column h-100 justify-content-between">
@@ -70,15 +89,30 @@
               class="w-50 me-4"
             />
           </div>
-          <div class="col-1">
-            <!-- inserire icona -->
+          <div class="col-2 d-flex align-items-center">
+            <div
+              class="
+                chevron-bg
+                d-flex
+                justify-content-center
+                align-items-center
+                clickable
+              "
+            >
+              <i @click="increaseIndex" class="fas fa-chevron-right"></i>
+            </div>
           </div>
         </div>
         <!-- end col -->
+
+        <!-- dot -->
         <div class="col-12 d-flex justify-content-center mt-5">
-          <div class="dot mx-2 clickable"></div>
-          <div class="dot mx-2 clickable"></div>
-          <div class="dot mx-2 clickable"></div>
+          <div
+            v-for="(dot, dotIndex) in images"
+            :key="dotIndex"
+            class="dot mx-2 clickable"
+            @click="setCurrentIndex(dotIndex)"
+          ></div>
         </div>
       </div>
     </div>
@@ -89,12 +123,49 @@
 <script>
 export default {
   name: "Jumbo",
+  data() {
+    return {
+      currentIndex: 0,
+      images: ["jumbo-boys-1", "short-slider-rev-1-img-3", "slider-img-11"],
+    };
+  },
+  created() {
+    setInterval(() => {
+      this.increaseIndex();
+    }, 5000);
+  },
+  methods: {
+    getImages(image) {
+      return require(`@/assets/img/${image}.png`);
+    },
+    increaseIndex() {
+      this.currentIndex++;
+      if (this.currentIndex > this.images.length - 1) {
+        this.currentIndex = 0;
+      }
+    },
+    decreaseIndex() {
+      this.currentIndex--;
+      if (this.currentIndex < 0) {
+        this.currentIndex = this.images.length - 1;
+      }
+    },
+    setCurrentIndex(index) {
+      return (this.currentIndex = index);
+    },
+  },
 };
 </script>
 
 <style scoped lang="scss">
 @import "@/scss/_style.scss";
 .jumbo {
+  .chevron-bg {
+    width: 30px;
+    height: 30px;
+    background-color: $main-color;
+    border-radius: 50%;
+  }
   .jumbo-title {
     font-size: 75px;
   }
@@ -102,11 +173,11 @@ export default {
     color: $subtitle-grey;
   }
   .jumbo-btn {
-    border: 2px solid $rose;
+    border: 2px solid $main-color;
     border-radius: 0;
     padding: 7px 18px;
     &:hover {
-      background-color: $rose;
+      background-color: $main-color;
     }
   }
   .dot {
@@ -114,7 +185,10 @@ export default {
     padding: 3px;
     width: 10px;
     height: 10px;
-    background-color: $rose;
+    background-color: $main-color;
+    &:hover {
+      transform: scale(1.8);
+    }
   }
 }
 </style>

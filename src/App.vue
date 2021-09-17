@@ -30,4 +30,11 @@ export default {
 #app {
   overflow-x: hidden;
 }
+
+a {
+  color: black;
+  &:hover {
+    color: black;
+  }
+}
 </style>
