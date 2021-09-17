@@ -8,7 +8,7 @@
         <div class="col-3">
           <figure>
             <img src="@/assets/img/logo-sidearea-1.png" alt="logo" />
-            <p class="fw-italic mt-3">Let's get creative</p>
+            <p class="fw-italic mt-3">Let's Get Creative</p>
           </figure>
         </div>
         <!-- 2 -->
@@ -26,16 +26,16 @@
           <p>Stay in touch with us</p>
           <div class="social d-flex justify-content-center">
             <p>
-              <a href=""> <i class="fab fa-twitter mx-2"></i></a>
+              <a href=""> <i class="fab fa-twitter mx-3"></i></a>
             </p>
             <p>
-              <a href=""><i class="fab fa-pinterest-p mx-2"></i> </a>
+              <a href=""><i class="fab fa-pinterest-p mx-3"></i> </a>
             </p>
             <p>
-              <a href=""> <i class="fab fa-facebook-f mx-2"></i></a>
+              <a href=""> <i class="fab fa-facebook-f mx-3"></i></a>
             </p>
             <p>
-              <a href=""><i class="fab fa-linkedin-in mx-2"></i> </a>
+              <a href=""><i class="fab fa-linkedin-in mx-3"></i> </a>
             </p>
           </div>
         </div>

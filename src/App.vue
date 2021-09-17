@@ -31,6 +31,14 @@ export default {
   overflow-x: hidden;
 }
 
+.lobster {
+  font-family: "Lobster", cursive;
+}
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+}
+
 a {
   color: black;
   &:hover {

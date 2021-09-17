@@ -10,7 +10,10 @@
           h-100
         "
       >
-        <h1 class="my-3">Want to work with us? Send a message</h1>
+        <h1 class="my-3 fw-light">
+          Want to work with us? Send us
+          <span class="lobster fs-1">a message</span>
+        </h1>
         <p class="my-3">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
           cupiditate aliquid quis! Unde temporibus velit magni eius

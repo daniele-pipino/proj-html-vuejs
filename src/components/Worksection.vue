@@ -3,7 +3,9 @@
     <div class="container">
       <div class="text-center">
         <!-- title -->
-        <h1 class="m-5">Working Process</h1>
+        <h1 class="m-5 fw-light">
+          Working <span class="lobster fs-1">process</span>
+        </h1>
         <!-- process -->
         <div class="process-container d-flex justify-content-center">
           <div v-for="(work, index) in workProcess" :key="index" class="m-4">
@@ -12,8 +14,8 @@
                 <i :class="work.icon"></i>
               </div>
 
-              <h4 class="mt-3">{{ work.name }}</h4>
-              <p class="mt-3">{{ work.explanation }}</p>
+              <h4 class="mt-3 fw-light">{{ work.name }}</h4>
+              <p class="mt-3 explanation">{{ work.explanation }}</p>
             </div>
           </div>
           <!-- end process-->
@@ -70,6 +72,9 @@ export default {
     background-image: url("../assets/svg/svg-3.svg");
     background-repeat: no-repeat;
     background-position: top;
+    .explanation {
+      color: $subtitle-grey;
+    }
   }
   .bg-rounded {
     border-radius: 50%;

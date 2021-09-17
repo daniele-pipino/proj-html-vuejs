@@ -4,13 +4,26 @@
     <figure class="position-relative">
       <img :src="getPoster(this.post.poster_path)" alt="" class="img-fluid" />
       <div class="article-date">
-        <div class="day text-center">{{ post.day }}</div>
-        <div class="month-year text-center">{{ post.month }}</div>
+        <div
+          class="
+            day
+            d-flex
+            justify-content-center
+            align-items-center
+            lobster
+            fs-3
+          "
+        >
+          <div>
+            {{ post.day }}
+          </div>
+        </div>
+        <div class="month-year text-center fw-bolder">{{ post.month }}</div>
       </div>
     </figure>
     <!-- end image -->
-    <h4>{{ post.title }}</h4>
-    <p class="fw-italic">{{ post.author }}</p>
+    <h4 class="fw-light mb-3">{{ post.title }}</h4>
+    <p class="fst-italic dancing-script">{{ post.author }}</p>
   </div>
 </template>
 

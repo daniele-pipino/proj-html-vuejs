@@ -1,6 +1,6 @@
 <template>
   <!-- start jumbo -->
-  <div class="jumbo mx-3 mt-5">
+  <div class="jumbo mx-3 mt-5" id="jumbo">
     <div class="container">
       <div class="row mb-5">
         <!-- left -->
@@ -25,7 +25,7 @@
           <div class="col-10">
             <!-- title -->
             <h1 class="jumbo-title fw-light text-right mb-4">
-              Devotion that never ends
+              Devotion that never <span class="lobster">ends</span>
             </h1>
             <!-- subtitle -->
             <p class="jumbo-subtitle mb-5">
@@ -163,7 +163,7 @@ export default {
   .chevron-bg {
     width: 30px;
     height: 30px;
-    background-color: $main-color;
+    background-color: $rose;
     border-radius: 50%;
   }
   .jumbo-title {
@@ -173,11 +173,11 @@ export default {
     color: $subtitle-grey;
   }
   .jumbo-btn {
-    border: 2px solid $main-color;
+    border: 2px solid $rose;
     border-radius: 0;
     padding: 7px 18px;
     &:hover {
-      background-color: $main-color;
+      background-color: $rose;
     }
   }
   .dot {
@@ -185,7 +185,7 @@ export default {
     padding: 3px;
     width: 10px;
     height: 10px;
-    background-color: $main-color;
+    background-color: $rose;
     &:hover {
       transform: scale(1.8);
     }
